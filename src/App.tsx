@@ -35,11 +35,11 @@ function App() {
           <PageContainer index={3}>
             <Journal />
           </PageContainer>
+          
+          <PageContainer index={4}>
+            <Footer />
+          </PageContainer>
         </main>
-
-        <div className="absolute bottom-0 w-full z-10 pointer-events-none">
-          <Footer />
-        </div>
       </div>
     </ScrollProvider>
   );

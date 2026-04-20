@@ -5,7 +5,7 @@ export function Footer() {
   const { description, socials, nav, address, contact, brand, labels, copyright, links } = t.footer;
 
   return (
-    <footer className="bg-background pt-20 md:pt-32 pb-12 px-6 md:px-12 border-t border-white/10" id="contact">
+    <footer className="w-full bg-black/40 backdrop-blur-md pt-16 md:pt-24 pb-12 px-6 md:px-12 border border-white/10 rounded-3xl shadow-2xl" id="contact">
       <div className="max-w-[1600px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16 md:mb-24">
           

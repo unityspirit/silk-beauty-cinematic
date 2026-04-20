@@ -6,7 +6,7 @@ const FRAME_DIR = '/frames-webp';
 const SCROLL_SPEED_WHEEL = 0.15;
 const SCROLL_SPEED_TOUCH = 0.65;
 const LERP_SPEED = 0.1;
-const PAGE_COUNT = 4; // Hero, Assembly, Portfolio, Journal
+const PAGE_COUNT = 5; // Hero, Assembly, Portfolio, Journal, Footer
 
 export const ScrollCanvas: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
