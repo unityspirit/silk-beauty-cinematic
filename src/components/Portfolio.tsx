@@ -1,47 +1,34 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 
 export const Portfolio = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 md:py-24 px-6 md:px-12 bg-surface-container">
-      <div className="max-w-7xl mx-auto flex flex-col gap-24 md:gap-32">
-        {t.portfolio.projects.map((item, index) => (
-          <PortfolioItem key={item.id} item={item} index={index} cta={t.portfolio.cta} />
-        ))}
-      </div>
-    </section>
+    <div className="flex flex-col gap-24 md:gap-32 w-full">
+      {t.portfolio.projects.map((item, index) => (
+        <PortfolioItem key={item.id} item={item} index={index} cta={t.portfolio.cta} />
+      ))}
+    </div>
   );
 };
 
 const PortfolioItem = ({ item, index, cta }: { item: any, index: number, cta: string }) => {
   const isEven = index % 2 === 0;
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ['start end', 'end start']
-  });
-
-  const imageY = useTransform(scrollYProgress, [0, 1], ['-15%', '15%']);
 
   return (
     <div 
-      ref={containerRef}
       className={`flex flex-col lg:flex-row gap-8 lg:gap-24 items-center ${isEven ? '' : 'lg:flex-row-reverse'}`}
     >
-      <div className="w-full lg:w-[60%] h-[40vh] md:h-[50vh] lg:h-[70vh] overflow-hidden group">
+      <div className="w-full lg:w-[60%] h-[40vh] md:h-[50vh] lg:h-[70vh] overflow-hidden group rounded-xl border border-white/10 shadow-2xl bg-black/40 backdrop-blur-md">
         <motion.div 
-          className="w-full h-[130%]"
-          style={{ y: imageY }}
+          className="w-full h-full"
         >
           {/* Removed grayscale here for premium photography colors */}
           <img 
             src={item.image} 
             alt={item.title} 
-            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-90"
           />
         </motion.div>
       </div>

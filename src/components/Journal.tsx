@@ -5,16 +5,15 @@ export function Journal() {
   const { title, description, placeholder, subscribe } = t.journal;
 
   return (
-    <section className="py-24 md:py-40 px-6 md:px-12 relative border-y border-white/5 bg-background overflow-hidden" id="journal">
+    <div className="relative text-center w-full max-w-3xl mx-auto backdrop-blur-md bg-black/20 p-8 md:p-16 rounded-3xl border border-white/10 shadow-2xl">
       {/* Abstract Background Elements */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-white/5 rounded-full blur-[2px] opacity-20 hidden md:block"></div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-white/5 rounded-full blur-[1px] opacity-30 hidden md:block"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[300px] border border-white/5 rounded-[100%] blur-[10px] opacity-20 pointer-events-none"></div>
 
-      <div className="max-w-3xl mx-auto text-center relative z-10">
-        <h2 className="serif-display text-3xl md:text-5xl text-white mb-6">
+      <div className="relative z-10">
+        <h2 className="serif-display text-4xl md:text-6xl text-white mb-6 text-shadow-md">
           {title}
         </h2>
-        <p className="text-surface-tint font-light tracking-wide leading-relaxed mb-12 max-w-lg mx-auto">
+        <p className="text-white/80 font-light tracking-wide leading-relaxed mb-12 max-w-lg mx-auto drop-shadow-sm">
           {description}
         </p>
 
@@ -22,17 +21,17 @@ export function Journal() {
           <input 
             type="email" 
             placeholder={placeholder}
-            className="flex-1 bg-transparent border-b border-outline-variant py-3 px-4 text-white placeholder:text-surface-tint/50 focus:outline-none focus:border-white transition-colors"
+            className="flex-1 bg-black/40 backdrop-blur-md border border-white/20 py-4 px-6 rounded-full text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
             required
           />
           <button 
             type="submit"
-            className="text-xs tracking-[0.1em] uppercase border border-outline-variant px-8 py-3 hover:bg-white hover:text-background transition-all duration-500 whitespace-nowrap"
+            className="text-xs tracking-[0.1em] uppercase bg-white text-black font-semibold rounded-full px-8 py-4 hover:bg-white/90 hover:scale-105 transition-all duration-300 whitespace-nowrap"
           >
             {subscribe}
           </button>
         </form>
       </div>
-    </section>
+    </div>
   );
 }
