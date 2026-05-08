@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useScrollProgress } from '../context/ScrollContext';
 
-const TOTAL_FRAMES = 200; // Matches Python script output
+const TOTAL_FRAMES = 208; // Matches Python script output
 const FRAME_DIR = '/frames-webp';
 const LERP_SPEED = 0.08; // slightly slower for smoother large transitions
 const PAGE_COUNT = 5; // Hero, Assembly, Portfolio, Journal, Footer
@@ -244,8 +244,8 @@ export const ScrollCanvas: React.FC = () => {
       {loading && (
         <div className="fixed inset-0 z-[9999] bg-[#030304] flex flex-col items-center justify-center transition-opacity duration-700">
           <div className="text-white text-center">
-            <h1 className="text-4xl font-serif mb-2">UnitySpirit</h1>
-            <p className="text-white/50 mb-8 uppercase tracking-widest text-xs">Loading Archive</p>
+            <h1 className="text-4xl font-serif mb-2">Silk Beauty</h1>
+            <p className="text-white/50 mb-8 uppercase tracking-widest text-xs">Loading Experience</p>
             <div className="text-6xl font-bold font-mono mb-4">{loadPct}<span className="text-2xl text-white/40">%</span></div>
             <div className="w-64 h-1 bg-white/10 rounded overflow-hidden">
               <div className="h-full bg-white transition-all duration-200" style={{ width: `${loadPct}%` }} />

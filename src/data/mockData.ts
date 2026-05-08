@@ -2,140 +2,140 @@ export type Language = 'en' | 'ru';
 
 export const translations = {
   en: {
-    nav: ['Portfolio', 'The Assembly', 'Journal'],
+    nav: ['Services', 'About Us', 'Reviews'],
     hero: {
-      titleLines: ['Restoring Time.', 'Building Eternity.'],
-      subtitle: 'A private collective dedicated to the preservation of monumental heritage.',
-      cta: 'Explore the Archive',
+      titleLines: ['Silk Beauty.', 'Perfection.'],
+      subtitle: 'The finest premium cosmetology and beauty salon in Pyatigorsk.',
+      cta: 'Book an Appointment',
       bgImage: '/hero.png'
     },
     assembly: {
       sectionNum: '01',
-      headlineMain: 'The Assembly:',
-      headlineSub: 'A Sanctum of Craft.',
+      headlineMain: 'Our Vision:',
+      headlineSub: 'A Sanctum of Beauty.',
       paragraphs: [
-        'UnitySpirit is not an agency. We are a guild of master masons, historians, and modernist architects unified by a single ethos: the dialogue between the primordial and the precise.',
-        'We believe that true luxury lies in permanence. By restoring the stone monoliths of the past, we construct the spiritual foundations of the future.'
+        'Silk Beauty is not just a salon. We are a team of expert cosmetologists and stylists unified by a single ethos: highlighting your natural beauty with precision.',
+        'We believe that true luxury lies in details. By using the finest products and techniques, we construct the foundation of your confidence.'
       ],
       image: '/port1.png',
-      imageCaption: 'Material Integrity'
+      imageCaption: 'Aesthetic Integrity'
     },
     portfolio: {
-      title: 'The Archive',
-      subtitle: 'Restoration Projects 2018—2024',
+      title: 'Our Services',
+      subtitle: 'Premium Cosmetology 2026',
       projects: [
         {
           id: 1,
-          title: 'The Obsidian Vault',
-          description: 'A complete structural restoration of a mid-century coastal fortress. Preserving the brutalist soul through basalt reinforcement.',
+          title: 'Advanced Cosmetology',
+          description: 'A complete range of facial treatments, preserving your youthful soul through innovative aesthetic medicine.',
           image: '/port1.png',
           alignment: 'left'
         },
         {
           id: 2,
-          title: 'Marble Atrium II',
-          description: 'Precision restoration of 19th-century Carrara marble flooring using original artisanal techniques and modern stabilization.',
+          title: 'Premium Styling',
+          description: 'Precision hair styling and coloring using original artisanal techniques and modern stabilization.',
           image: '/port2.png',
           alignment: 'right'
         },
         {
           id: 3,
-          title: 'Echo Chamber',
-          description: 'Repurposing an industrial silo into a private acoustic gallery. A masterclass in thermal mass and raw material texture.',
+          title: 'Spa & Wellness',
+          description: 'A private acoustic gallery of relaxation. A masterclass in thermal mass and raw material texture for your body.',
           image: '/port3.png',
           alignment: 'left'
         }
       ],
-      cta: 'View Project'
+      cta: 'View Details'
     },
     journal: {
-      title: 'The Journal of Permanence',
-      description: 'Curated insights on heritage, architecture, and the philosophy of stone delivered quarterly to your sanctum.',
+      title: 'The Beauty Journal',
+      description: 'Curated insights on beauty, aesthetics, and the philosophy of care delivered quarterly to your sanctum.',
       placeholder: 'Enter your email',
       subscribe: 'Subscribe'
     },
     footer: {
-      brand: 'UnitySpirit',
-      description: 'Preserving the silent weight of history through architectural precision. Member of the International Guild of Restoration Architects.',
+      brand: 'Silk Beauty',
+      description: 'Preserving the silent weight of beauty through precision. The best salon in Pyatigorsk.',
       labels: {
         directory: 'Directory',
         network: 'Network',
         headquarters: 'Headquarters'
       },
-      socials: ['Instagram', 'LinkedIn', 'Pinterest'],
-      nav: ['Portfolio', 'The Assembly', 'Journal', 'Contact'],
-      address: '14 Rue des Architectes\n75003 Paris, FR',
-      contact: '+33 (0) 1 45 67 89 00\nhq@unityspirit.com',
-      copyright: 'UnitySpirit. All rights reserved.',
+      socials: ['Instagram', 'VKontakte', 'Telegram'],
+      nav: ['Services', 'About', 'Reviews', 'Contact'],
+      address: 'Pyatigorsk, Russia',
+      contact: '+7 (999) 000-00-00\nhello@silkbeauty.ru',
+      copyright: 'Silk Beauty. All rights reserved.',
       links: ['Privacy', 'Terms', 'Credits']
     }
   },
   ru: {
-    nav: ['Портфолио', 'Ассамблея', 'Журнал'],
+    nav: ['Услуги', 'О Нас', 'Отзывы'],
     hero: {
-      titleLines: ['Восстанавливая Время.', 'Созидая Вечность.'],
-      subtitle: 'Закрытый коллектив, посвященный сохранению монументального наследия.',
-      cta: 'Исследовать Архив',
+      titleLines: ['Silk Beauty.', 'Совершенство.'],
+      subtitle: 'Лучший премиальный салон красоты и косметологии в Пятигорске.',
+      cta: 'Записаться на прием',
       bgImage: '/hero.png'
     },
     assembly: {
       sectionNum: '01',
-      headlineMain: 'Ассамблея:',
-      headlineSub: 'Святилище Ремесла.',
+      headlineMain: 'Наш Подход:',
+      headlineSub: 'Святилище Красоты.',
       paragraphs: [
-        'UnitySpirit — это не агентство. Мы — гильдия мастеров-каменщиков, историков и архитекторов-модернистов, объединенных единым духом: диалогом между первозданным и точным.',
-        'Мы верим, что истинная роскошь кроется в постоянстве. Восстанавливая каменные монолиты прошлого, мы закладываем духовный фундамент будущего.'
+        'Silk Beauty — это не просто салон. Мы — команда экспертов-косметологов и стилистов, объединенных единым духом: точным подчеркиванием вашей естественной красоты.',
+        'Мы верим, что истинная роскошь кроется в деталях. Используя лучшие продукты и техники, мы закладываем фундамент вашей уверенности.'
       ],
       image: '/port1.png',
-      imageCaption: 'Целостность Материала'
+      imageCaption: 'Эстетическая Целостность'
     },
     portfolio: {
-      title: 'Архив',
-      subtitle: 'Реставрационные Проекты 2018—2024',
+      title: 'Наши Услуги',
+      subtitle: 'Премиальная Косметология',
       projects: [
         {
           id: 1,
-          title: 'Обсидиановое Хранилище',
-          description: 'Полная структурная реставрация прибрежной крепости середины века. Сохранение бруталистской души посредством базальтового армирования.',
+          title: 'Аппаратная Косметология',
+          description: 'Полный спектр процедур для лица. Сохранение молодости с помощью инновационной эстетической медицины.',
           image: '/port1.png',
           alignment: 'left'
         },
         {
           id: 2,
-          title: 'Мраморный Атриум II',
-          description: 'Точечная реставрация каррарского мраморного пола XIX века с использованием оригинальных ремесленных техник и современной стабилизации.',
+          title: 'Премиальный Стайлинг',
+          description: 'Точные стрижки и окрашивание с использованием эксклюзивных техник и современных красителей.',
           image: '/port2.png',
           alignment: 'right'
         },
         {
           id: 3,
-          title: 'Эхо-Камера',
-          description: 'Перепрофилирование промышленного силоса в частную акустическую галерею. Мастер-класс в области термомассы и текстуры сырого материала.',
+          title: 'Spa & Relax',
+          description: 'Приватная галерея релаксации. Восстановление вашего тела и разума.',
           image: '/port3.png',
           alignment: 'left'
         }
       ],
-      cta: 'Смотреть Проект'
+      cta: 'Подробнее'
     },
     journal: {
-      title: 'Журнал Постоянства',
-      description: 'Отобранные инсайты о наследии, архитектуре и философии камня, доставляемые ежеквартально в ваше святилище.',
+      title: 'Журнал Красоты',
+      description: 'Отобранные инсайты о красоте, эстетике и философии ухода, доставляемые ежеквартально в ваше святилище.',
       placeholder: 'Введите ваш email',
       subscribe: 'Подписаться'
     },
     footer: {
-      brand: 'UnitySpirit',
-      description: 'Сохраняем безмолвный вес истории через архитектурную точность. Член Международной Гильдии Архитекторов-Реставраторов.',
+      brand: 'Silk Beauty',
+      description: 'Сохраняем вашу красоту через профессионализм и точность. Лучший салон Пятигорска.',
       labels: {
         directory: 'Каталог',
         network: 'Сеть',
-        headquarters: 'Штаб-квартира'
+        headquarters: 'Локация'
       },
-      socials: ['Instagram', 'LinkedIn', 'Pinterest'],
-      nav: ['Портфолио', 'Ассамблея', 'Журнал', 'Контакты'],
-      address: '14 Rue des Architectes\n75003 Paris, FR',
-      contact: '+33 (0) 1 45 67 89 00\nhq@unityspirit.com',
-      copyright: 'UnitySpirit. Все права защищены.',
+      socials: ['Instagram', 'ВКонтакте', 'Telegram'],
+      nav: ['Услуги', 'О Нас', 'Отзывы', 'Контакты'],
+      address: 'Пятигорск, Россия',
+      contact: '+7 (999) 000-00-00\nhello@silkbeauty.ru',
+      copyright: 'Silk Beauty. Все права защищены.',
       links: ['Конфиденциальность', 'Термины', 'Кредиты']
     }
   }
