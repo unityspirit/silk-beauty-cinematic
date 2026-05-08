@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useScrollProgress } from '../context/ScrollContext';
 
-const TOTAL_FRAMES = 360; // Matches Python script output
+const TOTAL_FRAMES = 200; // Matches Python script output
 const FRAME_DIR = import.meta.env.BASE_URL + 'frames-webp';
 const LERP_SPEED = 0.08; // slightly slower for smoother large transitions
 const PAGE_COUNT = 5; // Hero, Assembly, Portfolio, Journal, Footer
